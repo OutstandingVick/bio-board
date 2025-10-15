@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         main: '#EFCA08',
         support: '#1A1423',
-        side: '#9CF6F6',
+        side: '#470FF4',
       },
     },
   },

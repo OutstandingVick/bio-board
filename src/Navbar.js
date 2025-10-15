@@ -12,23 +12,37 @@ export default function Navbar() {
             <img
               className='rounded-full w-12 h-12 bg-no-repeat bg-center bg-cover'
               src={`${process.env.PUBLIC_URL}/img/prof.jpg`}
-              alt='Home Picture'
+              alt='Profile'
             />
           </div>
-          <h1 className='font-crimson font-semibold text-xl'>Oustandingvick</h1>
+          <h1 className='font-crimson font-semibold text-xl hover:text-side'>
+            Oustandingvick
+          </h1>
         </div>
 
         <div className='text-lg font-varela hidden md:flex space-x-8 font-semibold'>
-          <a href='/' className='hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='hover:text-side hover:underline underline-offset-4'
+          >
             Works
           </a>
-          <a href='/' className='hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='hover:text-side hover:underline underline-offset-4'
+          >
             Services
           </a>
-          <a href='/' className='hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='hover:text-side hover:underline underline-offset-4'
+          >
             Experience
           </a>
-          <a href='/' className='hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='hover:text-side hover:underline underline-offset-4'
+          >
             Contact
           </a>
         </div>
@@ -36,9 +50,9 @@ export default function Navbar() {
         <div className='md:hidden bg-transparent'>
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
-              <X className='text-support w-7 h-7' />
+              <X className='hover:text-side text-support w-7 h-7' />
             ) : (
-              <Menu className='text-support w-7 h-7' />
+              <Menu className='hover:text-side text-support w-7 h-7' />
             )}
           </button>
         </div>
@@ -47,16 +61,28 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className='md:hidden mt-4 space-y-3 text-center text-support font-lato font-semibold'>
-          <a href='/' className='block hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='block hover:text-side hover:underline underline-offset-4'
+          >
             Works
           </a>
-          <a href='/' className='block hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='block hover:text-side hover:underline underline-offset-4'
+          >
             Services
           </a>
-          <a href='/' className='block hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='block hover:text-side hover:underline underline-offset-4'
+          >
             Experience
           </a>
-          <a href='/' className='block hover:underline underline-offset-4'>
+          <a
+            href='/'
+            className='block hover:text-side hover:underline underline-offset-4'
+          >
             Contact
           </a>
         </div>
