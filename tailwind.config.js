@@ -6,12 +6,12 @@ module.exports = {
       fontFamily: {
         sketch: ['"Cabin Sketch"', 'cursive'],
         cardo: ['Cardo', 'serif'],
-        ubuntu: ['Ubuntu', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
       },
       colors: {
-        primary: '#EFCA08',
-        secondary: '#1A1423',
-        tertiary: '#9CF6F6',
+        main: '#EFCA08',
+        support: '#1A1423',
+        side: '#9CF6F6',
       },
     },
   },
