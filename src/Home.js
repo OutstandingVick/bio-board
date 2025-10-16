@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <article className='bg-main px-12 md:mx-20 mt-14'>
+    <article className='bg-main mt-14'>
       <div className='font-lato space-y-4'>
-        <div className='space-y-4 text-3xl md:text-5xl'>
+        <div className='space-y-4 text-3xl md:text-5xl left'>
           <h2>
             I Create Written <span className='text-side'>Web3</span> Content
           </h2>
@@ -18,7 +18,7 @@ export default function Home() {
             And <span className='text-side'>Drives</span> Understanding.
           </h2>
         </div>
-        <div className='space-y-4 pl-10 md:pl-64 ml-10 md:ml-64 text-3xl md:text-5xl'>
+        <div className='space-y-4 text-3xl pl-12 md:pl-60 ml-12 md:ml-96 md:text-5xl right'>
           <h2>
             I Turn <span className='text-side'>Complex</span> Blockchain Ideas
           </h2>

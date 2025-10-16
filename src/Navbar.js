@@ -5,10 +5,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='font-lato text-support bg-main px-12 py-2 shadow-md'>
-      <div className='max-w-7xl flex items-center justify-between'>
+    <nav className='font-lato text-support bg-main py-2'>
+      <div className='flex items-center justify-between'>
         <div className='flex items-center space-x-2'>
-          <div className='pl-12 p-2'>
+          <div className='p-2'>
             <img
               className='rounded-full w-12 h-12 bg-no-repeat bg-center bg-cover'
               src={`${process.env.PUBLIC_URL}/img/prof.jpg`}
