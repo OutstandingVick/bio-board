@@ -66,4 +66,4 @@ body{background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.018) 0,rgba(0,0
   .news-ticker div{border-right:0;border-bottom:1px solid}
 }
 .hero-portrait,.about-image{background:var(--paper)}
-.hero-portrait img,.about-image img{filter:grayscale(1) contrast(1.28);mix-blend-mode:multiply}
+.hero-portrait img,.about-image img{filter:none;mix-blend-mode:normal}
