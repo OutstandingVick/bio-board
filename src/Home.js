@@ -6,13 +6,20 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 export default function Home() {
+  const publicationDate = new Intl.DateTimeFormat('en-GB', {
+    weekday: 'long',
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric'
+  }).format(new Date()).replace(',', '').toUpperCase();
+
   return <main><a className="skip-link" href="#works">Skip to selected work</a><div className="paper-shell">
     <header className="masthead" id="home">
       <div className="masthead-kicker"><span>Lagos, Nigeria</span><span>The Research Edition</span><span>Est. 2023</span></div>
       <div className="masthead-title">Outstandingvick</div>
       <br/>
       <div className="masthead-subtitle">The Written Record of a Web3 Researcher</div>
-      <div className="edition-line"><span>Monday · Ideas onchain</span><span>Vol. III</span><span>Research · Stories · Strategy</span><span>Open access</span></div>
+      <div className="edition-line"><span>{publicationDate}</span><span>Vol. III</span><span>Research · Stories · Strategy</span><span>Open access</span></div>
     </header>
     <Navbar />
     <section className="hero section-rule">
@@ -24,7 +31,7 @@ export default function Home() {
         <p className="byline">By The Research Edition · Reporting from the Solana ecosystem</p>
         <div className="button-row"><a className="button dark" href="#works">Read the work →</a><a className="button" href="#contact">Commission a story</a></div>
         <div className="news-ticker"><div><strong>06</strong><span>Selected works</span></div><div><strong>Web3</strong><span>Primary beat</span></div><div><strong>Global</strong><span>Remote-ready</span></div><div><strong>Clear</strong><span>No jargon for jargon’s sake</span></div></div>
-      </div><div className="hero-profile"><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/outstandingvick-laptop-amber.png`} alt="Outstandingvick, writer and researcher" decoding="async" /><figcaption>the writer, somewhere in his natural habitat</figcaption></figure><div className="portrait-notes"><p>He enjoys the full process — taking an idea from early thinking to something people can actually use. His main stack is React, Next.js and Tailwind on the front, with Node.js, databases and APIs handling what sits underneath.</p><p>When a project calls for it, he also works with Solana, Rust and Web3 infrastructure. Alongside building products, he writes and researches technical ideas — turning complex protocols, systems and emerging technology into stories people can understand.</p></div></div></div>
+      </div><div className="hero-profile"><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/outstandingvick-laptop-amber.png`} alt="Outstandingvick, writer and researcher" decoding="async" /><figcaption>PICTURED: the writer, somewhere in his natural habitat</figcaption></figure><div className="portrait-notes"><p>He enjoys the full process — taking an idea from early thinking to something people can actually use. His main stack is React, Next.js and Tailwind on the front, with Node.js, databases and APIs handling what sits underneath.</p><p>When a project calls for it, he also works with Solana, Rust and Web3 infrastructure. Alongside building products, he writes and researches technical ideas — turning complex protocols, systems and emerging technology into stories people can understand.</p></div></div></div>
     </section>
     <Works /><About /><Experience /><Contact />
   </div><Footer /></main>;
