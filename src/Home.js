@@ -22,7 +22,7 @@ export default function Home() {
         <p className="standfirst">Research, technical writing and narrative strategy for teams building the next internet.</p>
         <p className="byline">By Outstandingvick · Reporting from the Solana ecosystem</p>
         <div className="button-row"><a className="button dark" href="#works">Read the work →</a><a className="button" href="#contact">Commission a story</a></div>
-      </div><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/aboutt.jpg`} alt="Outstandingvick, writer and researcher" /><figcaption>Pictured: the writer, somewhere between a protocol deep-dive and a deadline.</figcaption></figure></div>
+      </div><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/aboutt.jpg`} alt="Outstandingvick, writer and researcher" decoding="async" /><figcaption>Pictured: the writer, somewhere between a protocol deep-dive and a deadline.</figcaption></figure></div>
       <div className="news-ticker"><div><strong>06</strong><span>Selected works</span></div><div><strong>Web3</strong><span>Primary beat</span></div><div><strong>Global</strong><span>Remote-ready</span></div><div><strong>Clear</strong><span>No jargon for jargon’s sake</span></div></div>
     </section>
     <Works /><About /><Experience /><Contact />
