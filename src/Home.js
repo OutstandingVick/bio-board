@@ -18,7 +18,7 @@ export default function Home() {
       <div className="section-meta"><span>Front Page</span><span>Filed under: Web3 Intelligence</span></div>
       <div className="hero-grid"><div className="hero-copy">
         <p className="eyebrow">Dispatch No. 01 — Clarity Published</p>
-        <h1>A Web3 storyteller who likes making complex ideas feel simple — <em>from protocol to people.</em></h1>
+        <h1>A Web3 storyteller making complex ideas simple — <em>protocol to people.</em></h1>
         <p className="standfirst">Research, technical writing and narrative strategy for teams building the next internet.</p>
         <p className="byline">By Outstandingvick · Reporting from the Solana ecosystem</p>
         <div className="button-row"><a className="button dark" href="#works">Read the work →</a><a className="button" href="#contact">Commission a story</a></div>
