@@ -16,3 +16,52 @@ body{background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.018) 0,rgba(0,0
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .nav-bar{background:rgba(255,185,0,.96)}.nav-links a:hover,.work-card:hover{background:rgba(23,23,23,.1)}.hero-copy{border-right-color:rgba(23,23,23,.45)}.ledger-no{color:rgba(23,23,23,.62)}.stamp{color:var(--paper);border-color:var(--paper)}.copyright{border-top-color:rgba(255,185,0,.35)}
 @media print{body{background:#fff}.paper-shell,.site-footer{width:100%;margin:0;box-shadow:none}.nav-bar,.button-row,.skip-link{display:none}.section-block{break-inside:avoid}.site-footer{background:#fff;color:#000;border-top:2px solid}}
+@media(max-width:760px){
+  .masthead{padding-top:4px}
+  .masthead-kicker{padding-bottom:8px}
+  .masthead-title{font-size:clamp(39px,12.5vw,48px);line-height:1;margin-top:10px}
+  .masthead-subtitle{font-size:8px;line-height:1.35;letter-spacing:.2em;margin:4px 0 10px}
+  .edition-line{font-size:9px;line-height:1.35;padding:7px 0}
+  .nav-bar{min-height:58px}
+  .nav-brand{font-size:19px}
+  .menu-button{width:44px;height:44px;border:1px solid var(--ink);padding:0;font-size:0}
+  .menu-button::after{content:'☰';font:25px/1 var(--sans)}
+  .nav-links a{padding:15px 18px;text-align:left}
+  .hero{padding:26px 0 30px}
+  .section-meta{font-size:9px;line-height:1.35;margin-bottom:25px;align-items:flex-start}
+  .section-meta span:last-child{text-align:right}
+  .hero h1{font-size:clamp(43px,13vw,52px);line-height:.98;margin:20px 0}
+  .standfirst{border-left:4px solid var(--ink);padding-left:16px;font-size:19px;font-style:italic;line-height:1.42}
+  .byline{font:600 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
+  .button-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .button{text-align:center;padding:12px 8px}
+  .hero-portrait{margin-top:34px}
+  .hero-portrait img{height:420px}
+  .news-ticker{margin-top:28px}
+  .news-ticker div{padding:13px 10px}
+  .section-block{padding:48px 0}
+  .section-heading{margin-bottom:24px}
+  .section-heading h2,.contact h2{font-size:clamp(42px,13vw,54px)}
+  .work-card{min-height:0;padding:22px 18px}
+  .company{margin-top:28px}
+  .work-card h3{font-size:29px}
+  .work-desc{font-size:14px}
+  .about-image img{height:430px}
+  .dropcap{font-size:20px}
+  .about-copy{font-size:16px}
+  .pullquote{font-size:21px}
+  .ledger article{gap:10px 12px;padding:20px 0}
+  .ledger h3{font-size:27px}
+  .social-links{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr}
+  .footer-inner>div:first-child,.stamp{grid-column:auto}
+  .stamp{margin-top:18px}
+}
+@media(max-width:360px){
+  .paper-shell{padding-inline:14px}
+  .masthead-title{font-size:38px}
+  .button-row{grid-template-columns:1fr}
+  .hero h1{font-size:41px}
+  .news-ticker{grid-template-columns:1fr}
+  .news-ticker div{border-right:0;border-bottom:1px solid}
+}
