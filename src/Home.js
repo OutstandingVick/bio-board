@@ -1,6 +1,5 @@
 import Navbar from './Navbar';
 import Works from './Works';
-import About from './About';
 import Experience from './Experience';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -33,6 +32,6 @@ export default function Home() {
         <div className="news-ticker"><div><strong>06</strong><span>Selected works</span></div><div><strong>Web3</strong><span>Primary beat</span></div><div><strong>Global</strong><span>Remote-ready</span></div><div><strong>Clear</strong><span>No jargon for jargon’s sake</span></div></div>
       </div><div className="hero-profile"><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/outstandingvick-laptop-amber.png`} alt="Outstandingvick, writer and researcher" decoding="async" /><figcaption>PICTURED: the writer, somewhere in his natural habitat</figcaption></figure><div className="portrait-notes"><p>He enjoys the full process — taking an idea from early thinking to something people can actually use. His main stack is React, Next.js and Tailwind on the front, with Node.js, databases and APIs handling what sits underneath.</p><p>When a project calls for it, he also works with Solana, Rust and Web3 infrastructure. Alongside building products, he writes and researches technical ideas — turning complex protocols, systems and emerging technology into stories people can understand.</p></div></div></div>
     </section>
-    <Works /><About /><Experience /><Contact />
+    <Works /><Experience /><Contact />
   </div><Footer /></main>;
 }
