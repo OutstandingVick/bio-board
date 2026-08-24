@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 export default function Home() {
-  return <main><div className="paper-shell">
+  return <main><a className="skip-link" href="#works">Skip to selected work</a><div className="paper-shell">
     <header className="masthead" id="home">
       <div className="masthead-kicker"><span>Lagos, Nigeria</span><span>The Research Edition</span><span>Est. 2023</span></div>
       <div className="masthead-title">Outstandingvick</div>
