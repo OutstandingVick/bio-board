@@ -10,6 +10,7 @@ export default function Home() {
     <header className="masthead" id="home">
       <div className="masthead-kicker"><span>Lagos, Nigeria</span><span>The Research Edition</span><span>Est. 2023</span></div>
       <div className="masthead-title">Outstandingvick</div>
+      <br/>
       <div className="masthead-subtitle">The Written Record of a Web3 Researcher</div>
       <div className="edition-line"><span>Monday · Ideas onchain</span><span>Vol. III</span><span>Research · Stories · Strategy</span><span>Open access</span></div>
     </header>
