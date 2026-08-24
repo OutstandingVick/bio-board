@@ -18,13 +18,13 @@ export default function Home() {
     <section className="hero section-rule">
       <div className="section-meta"><span>Front Page</span><span>Filed under: Web3 Intelligence</span></div>
       <div className="hero-grid"><div className="hero-copy">
-        <p className="eyebrow">Dispatch No. 01 — Clarity Published</p>
+        <p className="eyebrow">Case No. 22 — Clarity Published</p>
         <h1>A Web3 storyteller making complex ideas simple — <em>protocol to people.</em></h1>
         <p className="standfirst">Three years in: Outstandingvick writes about Innovations in Solana, turning complex protocols into clear stories — making technical ideas easier to understand.</p>
         <p className="byline">By The Research Edition · Reporting from the Solana ecosystem</p>
         <div className="button-row"><a className="button dark" href="#works">Read the work →</a><a className="button" href="#contact">Commission a story</a></div>
+        <div className="news-ticker"><div><strong>06</strong><span>Selected works</span></div><div><strong>Web3</strong><span>Primary beat</span></div><div><strong>Global</strong><span>Remote-ready</span></div><div><strong>Clear</strong><span>No jargon for jargon’s sake</span></div></div>
       </div><div className="hero-profile"><figure className="hero-portrait"><img src={`${process.env.PUBLIC_URL}/img/outstandingvick-laptop-amber.png`} alt="Outstandingvick, writer and researcher" decoding="async" /><figcaption>Pictured: the writer, somewhere between a protocol deep-dive and a deadline.</figcaption></figure><div className="portrait-notes"><p>He enjoys the full process — taking an idea from early thinking to something people can actually use. His main stack is React, Next.js and Tailwind on the front, with Node.js, databases and APIs handling what sits underneath.</p><p>When a project calls for it, he also works with Solana, Rust and Web3 infrastructure. Alongside building products, he writes and researches technical ideas — turning complex protocols, systems and emerging technology into stories people can understand.</p></div></div></div>
-      <div className="news-ticker"><div><strong>06</strong><span>Selected works</span></div><div><strong>Web3</strong><span>Primary beat</span></div><div><strong>Global</strong><span>Remote-ready</span></div><div><strong>Clear</strong><span>No jargon for jargon’s sake</span></div></div>
     </section>
     <Works /><About /><Experience /><Contact />
   </div><Footer /></main>;
