@@ -10,11 +10,4 @@ const projects = [
   {company:'Solana Collective',title:'The Silent Content Revolution',desc:'A case for content as Web3 infrastructure: the layer that turns technology into culture, trust and adoption.',tags:['Culture','Content','Opinion'],url:'https://open.substack.com/pub/outstandingvick/p/the-silent-revolution-why-content'},
   {company:'PantaMarkets',title:'The Oldest Human Itch: Being Right',desc:'How PantaMarkets turns being right into an avenue to create markets, trade outcomes and earn from the trades behind them.',tags:['Prediction Markets','Trading','Markets'],url:'https://outstandingvick.substack.com/p/the-oldest-human-itch-being-right'}
 ];
-export default function Works(){return 
-<section className="section-block section-rule" id="works">
-  <div className="section-meta"><span>The Evidence</span><span>Exhibits A–J · Entered 2024–Now</span></div>
-  <div className="section-heading works-heading"><h2>Selected Works</h2></div>
-  <div className="works-grid">{projects.map((p,i)=><article className={`work-card${i===0?' featured-work':''}`} key={p.title}><div className="exhibit"><span>Exhibit {String.fromCharCode(65+i)}</span><span>Verified</span></div>
-  <p className="company">{p.company}</p><h3>{p.title}</h3><p className="work-desc">{p.desc}</p><div className="tags">{p.tags.map(t=><span key={t}>{t}</span>)}</div
-  ><a href={p.url} target="_blank" rel="noreferrer">Open report →</a></article>)}</div>
-  </section>}
+export default function Works(){return <section className="section-block section-rule" id="works"><div className="section-meta"><span>The Evidence</span><span>Exhibits A–J · Entered 2024–Now</span></div><div className="section-heading works-heading"><h2>Selected Works</h2></div><div className="works-grid">{projects.map((p,i)=><article className={`work-card${i===0?' featured-work':''}`} key={p.title}><div className="exhibit"><span>Exhibit {String.fromCharCode(65+i)}</span><span>Verified</span></div><p className="company">{p.company}</p><h3>{p.title}</h3><p className="work-desc">{p.desc}</p><div className="tags">{p.tags.map(t=><span key={t}>{t}</span>)}</div><a href={p.url} target="_blank" rel="noreferrer">Open report →</a></article>)}</div></section>}
